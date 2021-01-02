@@ -1,14 +1,35 @@
 <resources>
     <string name="app_name">KuyLearn</string>
-    <string name="belajar_dimanapun">Belajar Dimanapun</string>
-    <string name="dengan_kualitas_jaringan_yang_semakin_membesar_kegiatan_belajar_mengajar_dapat_dilakukan_dimanapun_dan_kapanpun">Dengan kualitas jaringan yang semakin membesar, kegiatan belajar mengajar dapat dilakukan dimanapun dan kapanpun.</string>
-    <string name="diskusi_dengan_guru">Diskusi dengan Guru</string>
-    <string name="diskusikan_materi_beserta_tugas_yang_kurang_kamu_pahami_dengan_seluruh_tenaga_pengajar_terbaik_se_indonesia_yang_kami_miliki">Diskusikan materi beserta tugas yang kurang kamu pahami dengan seluruh tenaga pengajar terbaik se Indonesia yang kami miliki.</string>
-    <string name="sebarkan_inspirasi">Sebarkan Inspirasi</string>
-    <string name="buatlah_berbagai_tulisan_serta_karya_sebarkanlah_agar_menjadi_bermanfaat_bagi_yang_lain_buat_seluruh_dunia_tahu_akan_potensi_yang_ada_pada_dirimu">Buatlah berbagai tulisan serta karya. Sebarkanlah agar menjadi bermanfaat bagi yang lain. Buat seluruh dunia tahu akan potensi yang ada pada dirimu.</string>
-    <string name="belajar_jadi_lebih_mudah">Belajar Jadi Lebih Mudah</string>
-    <string name="dapatkan_beragam_kemudahan_dalam_kegiatan_belajar_mengajar_anda_membantu_memajukan_kegiatan_pendidikan_di_indonesia">Dapatkan beragam kemudahan dalam kegiatan belajar mengajar anda Membantu memajukan kegiatan pendidikan di Indonesia</string>
-    <string name="mulai_mimpimu">Mulai Mimpimu!</string>
+    <string name="welcome_title_1">Belajar Dimanapun</string>
+    <string name="welcome_description_1">Dengan kualitas jaringan yang semakin membesar, kegiatan belajar mengajar dapat dilakukan dimanapun dan kapanpun.</string>
+    <string name="welcome_title_2">Diskusi dengan Guru</string>
+    <string name="welcome_description_2">Diskusikan materi beserta tugas yang kurang kamu pahami dengan seluruh tenaga pengajar terbaik se Indonesia yang kami miliki.</string>
+    <string name="welcome_title_3">Sebarkan Inspirasi</string>
+    <string name="welcome_description_3">Buatlah berbagai tulisan serta karya. Sebarkanlah agar menjadi bermanfaat bagi yang lain. Buat seluruh dunia tahu akan potensi yang ada pada dirimu.</string>
+    <string name="welcome_title_4">Belajar Jadi Lebih Mudah</string>
+    <string name="welcome_description_4">Dapatkan beragam kemudahan dalam kegiatan belajar mengajar anda Membantu memajukan kegiatan pendidikan di Indonesia</string>
+    <string name="btn_start">Mulai Mimpimu!</string>
     <string name="lanjut">Lanjut</string>
     <string name="lewati">Lewati</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">lewati</string>
+    <string name="finish">Selesai</string>
+
+    <!-- untuk string -->
+    <string name="app_intro_skip_button">
+         [Translation for SKIP]
+    </string>
+    <string name="app_intro_next_button">
+         [Translation for NEXT]
+    </string>
+    <string name="app_intro_back_button">
+         [Translation for BACK]
+    </string>
+    <string name="app_intro_done_button">
+         [Translation for DONE]
+    </string>
+    <string name="app_intro_image_content_description">
+         [Translation for "graphics"]
+    </string>
 </resources>

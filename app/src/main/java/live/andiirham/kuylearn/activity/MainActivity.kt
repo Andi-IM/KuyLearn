@@ -1,7 +1,8 @@
-package live.andiirham.kuylearn
+package live.andiirham.kuylearn.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import live.andiirham.kuylearn.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
