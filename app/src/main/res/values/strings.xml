@@ -7,7 +7,7 @@
     <string name="welcome_title_3">Sebarkan Inspirasi</string>
     <string name="welcome_description_3">Buatlah berbagai tulisan serta karya. Sebarkanlah agar menjadi bermanfaat bagi yang lain. Buat seluruh dunia tahu akan potensi yang ada pada dirimu.</string>
     <string name="welcome_title_4">Belajar Jadi Lebih Mudah</string>
-    <string name="welcome_description_4">Dapatkan beragam kemudahan dalam kegiatan belajar mengajar anda Membantu memajukan kegiatan pendidikan di Indonesia</string>
+    <string name="welcome_description_4">Dapatkan beragam kemudahan dalam kegiatan belajar mengajar anda  Membantu memajukan kegiatan pendidikan di Indonesia</string>
     <string name="btn_start">Mulai Mimpimu!</string>
     <string name="lanjut">Lanjut</string>
     <string name="lewati">Lewati</string>
@@ -18,18 +18,18 @@
 
     <!-- untuk string -->
     <string name="app_intro_skip_button">
-         [Translation for SKIP]
+         Lewati
     </string>
     <string name="app_intro_next_button">
-         [Translation for NEXT]
+         Lanjut
     </string>
     <string name="app_intro_back_button">
-         [Translation for BACK]
+         Kembali
     </string>
     <string name="app_intro_done_button">
-         [Translation for DONE]
+         Mulai Mimpimu!
     </string>
     <string name="app_intro_image_content_description">
-         [Translation for "graphics"]
+         Grafik
     </string>
 </resources>

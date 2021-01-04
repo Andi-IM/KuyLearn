@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KuyLearn">
+        <activity android:name=".andi.ExploreActivity"></activity>
+        <activity android:name=".hakkan.DashboardActivity" />
+        <activity android:name=".hakkan.LoginActivity" />
+        <activity android:name=".hakkan.RegisterActivity" />
         <activity
-            android:name=".activity.WelcomeActivity"
+            android:name=".hakkan.WelcomeActivity"
             android:label="welcome_activity" />
         <activity
-            android:name=".activity.SplashScreenActivity"
+            android:name=".hakkan.SplashScreenActivity"
             android:theme="@style/SplashScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".hakkan.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

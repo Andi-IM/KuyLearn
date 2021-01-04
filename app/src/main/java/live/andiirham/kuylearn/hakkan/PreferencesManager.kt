@@ -1,17 +1,18 @@
-package live.andiirham.kuylearn.activity
+package live.andiirham.kuylearn.hakkan
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 
-class PreferencesManager @SuppressLint("CommitPrefEdits")
-constructor(context: Context) {
+class PreferencesManager(context: Context) {
 
     private val preferences: SharedPreferences
     private val editor: SharedPreferences.Editor
 
     init {
-        preferences = context.getSharedPreferences(PREFERENCE_CONFIGURATION_NAME, PRIVATE_MODE)
+        preferences = context.getSharedPreferences(
+            PREFERENCE_NAME,
+            PRIVATE_MODE
+        )
         editor = preferences.edit()
     }
 
@@ -24,7 +25,7 @@ constructor(context: Context) {
 
     companion object {
         private const val PRIVATE_MODE = 0
-        private const val PREFERENCE_CONFIGURATION_NAME = "configuration"
+        private const val PREFERENCE_NAME = "configuration"
         private const val FIRST_TIME = "isFirstRun"
     }
 }

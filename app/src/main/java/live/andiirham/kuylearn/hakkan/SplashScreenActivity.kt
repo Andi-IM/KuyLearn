@@ -1,4 +1,4 @@
-package live.andiirham.kuylearn.activity
+package live.andiirham.kuylearn.hakkan
 
 import android.content.Intent
 import android.os.Bundle
@@ -19,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@SplashScreenActivity,
-                    MainActivity::class.java
+                    DashboardActivity::class.java
                 )
             ) // nanti diarahkan ke halaman tertentu
             finish()
