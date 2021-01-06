@@ -5,4 +5,13 @@
         <item name="android:statusBarColor">@color/base_color</item>
         <item name="android:background">@color/base_color</item>
     </style>
+
+    <style name="CustomExplore" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/base_color</item>
+    </style>
+
+    <style name="CustomIntro" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
 </resources>

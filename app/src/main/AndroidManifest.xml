@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KuyLearn">
-        <activity android:name=".andi.ExploreActivity"></activity>
-        <activity android:name=".hakkan.DashboardActivity" />
-        <activity android:name=".hakkan.LoginActivity" />
-        <activity android:name=".hakkan.RegisterActivity" />
+        <activity
+            android:name=".andi.ExploreActivity"
+            android:theme="@style/CustomExplore" />
+        <activity
+            android:name=".hakkan.DashboardActivity"
+            android:theme="@style/CustomIntro" />
+        <activity
+            android:name=".hakkan.LoginActivity"
+            android:theme="@style/CustomIntro" />
+        <activity
+            android:name=".hakkan.RegisterActivity"
+            android:theme="@style/CustomIntro" />
         <activity
             android:name=".hakkan.WelcomeActivity"
             android:label="welcome_activity" />

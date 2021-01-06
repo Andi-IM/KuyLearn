@@ -19,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@SplashScreenActivity,
-                    DashboardActivity::class.java
+                    WelcomeActivity::class.java
                 )
             ) // nanti diarahkan ke halaman tertentu
             finish()

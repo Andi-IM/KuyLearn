@@ -32,4 +32,9 @@
     <string name="app_intro_image_content_description">
          Grafik
     </string>
+
+    <string name="item_user_name">Arung Ramadhan</string>
+    <string name="item_user_company">Siswa dari PNP</string>
+    <string name="item_user_time">Jan 1, 07.00</string>
+    <string name="item_user_message">Selamat Pagi!</string>
 </resources>
