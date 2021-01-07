@@ -4,11 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_kuylearn"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_kuylearn_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KuyLearn">
+        <activity android:name=".andi.PostActivity"
+            android:theme="@style/customPosts"/>
         <activity
             android:name=".andi.ExploreActivity"
             android:theme="@style/CustomExplore" />

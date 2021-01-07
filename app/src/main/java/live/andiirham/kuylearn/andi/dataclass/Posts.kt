@@ -5,9 +5,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Posts(
-    var name: String?,
-    var company: String?,
-    var date: String?,
-    var message: String?,
-    var photo: String?
+    var name: String,
+    var company: String,
+    var date: String,
+    var message: String,
+    var photo: String
 ) : Parcelable

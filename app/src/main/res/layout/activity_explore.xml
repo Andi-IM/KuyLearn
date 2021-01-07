@@ -34,7 +34,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btnProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -64,7 +64,7 @@
                 android:queryHint="Cari Teman Disini"
                 app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
                 app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-                app:layout_constraintStart_toEndOf="@+id/imageButton"
+                app:layout_constraintStart_toEndOf="@+id/btnProfile"
                 app:layout_constraintTop_toTopOf="@+id/toolbar3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package live.andiirham.kuylearn.andi.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,6 +11,11 @@ import live.andiirham.kuylearn.databinding.ItemCardviewExploreBinding
 
 class PostAdapter(private val list: ArrayList<Posts>) :
     RecyclerView.Adapter<PostAdapter.ViewHolder>() {
+
+    private var onItemClickCallback:OnItemClickCallback? = null
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
 
     inner class ViewHolder(private val binding: ItemCardviewExploreBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -26,6 +32,7 @@ class PostAdapter(private val list: ArrayList<Posts>) :
                 Glide.with(itemView.context)
                     .load(posts.photo)
                     .into(binding.postImage)
+                itemView.setOnClickListener { onItemClickCallback?.onItemClicked(posts) }
             }
         }
     }
@@ -40,5 +47,9 @@ class PostAdapter(private val list: ArrayList<Posts>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Posts)
     }
 }

@@ -14,4 +14,8 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+    <style name="customPosts" parent="Theme.AppCompat.Light">
+        <item name="android:statusBarColor">@color/base_color</item>
+    </style>
 </resources>

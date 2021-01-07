@@ -15,6 +15,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="skip">lewati</string>
     <string name="finish">Selesai</string>
+    <string name="explore">Explore</string>
 
     <!-- untuk string -->
     <string name="app_intro_skip_button">
@@ -37,4 +38,36 @@
     <string name="item_user_company">Siswa dari PNP</string>
     <string name="item_user_time">Jan 1, 07.00</string>
     <string name="item_user_message">Selamat Pagi!</string>
+
+
+    <!-- DATA ARRAY FOR RECYCLERVIEW -->
+    <string-array name="names">
+        <item>Arung Ramadhan</item>
+        <item>Arung Ramadhan</item>
+        <item>Arung Ramadhan</item>
+    </string-array>
+
+    <string-array name="company">
+        <item>Siswa dari PNP</item>
+        <item>Siswa dari PNP</item>
+        <item>Siswa dari PNP</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Jan 1, 07.00</item>
+        <item>Jan 1, 07.00</item>
+        <item>Jan 1, 07.00</item>
+    </string-array>
+
+    <string-array name="messages">
+        <item>Selamat Pagi!</item>
+        <item>Selamat Pagi!</item>
+        <item>Selamat Pagi!</item>
+    </string-array>
+
+    <string-array name="images">
+        <item>@drawable/ic_arung</item>
+        <item>@drawable/ic_arung</item>
+        <item>@drawable/ic_arung</item>
+    </string-array>
 </resources>
