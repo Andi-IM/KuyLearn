@@ -1,6 +1,5 @@
 package live.andiirham.kuylearn.andi.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -20,20 +19,16 @@ class PostAdapter(private val list: ArrayList<Posts>) :
     inner class ViewHolder(private val binding: ItemCardviewExploreBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(posts: Posts) {
-            with(binding) {
-                Glide.with(itemView.context)
-                    .load(posts.photo)
-                    .apply(RequestOptions().override(55, 55))
-                    .into(binding.civExplore)
-                binding.txtName.text = posts.name
-                binding.txtCompany.text = posts.company
-                binding.txtTime.text = posts.date
-                binding.txtMessage.text = posts.message
-                Glide.with(itemView.context)
-                    .load(posts.photo)
-                    .into(binding.postImage)
-                itemView.setOnClickListener { onItemClickCallback?.onItemClicked(posts) }
-            }
+            Glide.with(itemView.context)
+                .load(posts.photo)
+                .apply(RequestOptions().override(55, 55))
+                .into(binding.civExplore)
+            binding.txtName.text = posts.name
+            binding.txtCompany.text = posts.company
+            binding.txtTime.text = posts.date
+            binding.txtMessage.text = posts.message
+            binding.postImage.setImageResource(posts.photo)
+            itemView.setOnClickListener { onItemClickCallback?.onItemClicked(posts) }
         }
     }
 

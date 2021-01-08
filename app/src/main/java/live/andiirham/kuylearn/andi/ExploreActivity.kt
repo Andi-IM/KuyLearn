@@ -3,9 +3,8 @@ package live.andiirham.kuylearn.andi
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import live.andiirham.kuylearn.R
 import live.andiirham.kuylearn.andi.adapter.PostAdapter
@@ -24,12 +23,24 @@ class ExploreActivity : AppCompatActivity() {
 //        list.clear()
 
         binding.rvPosts.setHasFixedSize(true)
-        list.addAll(getList())
+        getList()
         showPosts()
 
         binding.btnProfile.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
+
+        binding.exploreSearch.suggestionsAdapter
+        binding.exploreSearch.setOnSuggestionListener(object : SearchView.OnSuggestionListener {
+            override fun onSuggestionSelect(position: Int): Boolean {
+                return true
+            }
+
+            override fun onSuggestionClick(position: Int): Boolean {
+                return true
+            }
+
+        })
     }
 
     private fun getList(): ArrayList<Posts> {
@@ -37,33 +48,38 @@ class ExploreActivity : AppCompatActivity() {
         val company = resources.getStringArray(R.array.company)
         val time = resources.getStringArray(R.array.messages)
         val message = resources.getStringArray(R.array.messages)
-        val photo = resources.getStringArray(R.array.images)
+        val photo = resources.obtainTypedArray(R.array.images)
+
+        Log.d(TAG, "NAME INDICES ${name.indices}")
 
         for (position in name.indices) {
-            Log.d("ITEMS", "Item $position")
             val post = Posts(
                 name[position],
                 company[position],
                 time[position],
                 message[position],
-                photo = photo[position]
+                photo.getResourceId(position, -1)
             )
             list.add(post)
         }
+        photo.recycle()
         return list
     }
-
     private fun showPosts() {
         binding.rvPosts.layoutManager = LinearLayoutManager(this)
         val cardViewAdapter = PostAdapter(list)
         binding.rvPosts.adapter = cardViewAdapter
 
-        cardViewAdapter.setOnItemClickCallback(object: PostAdapter.OnItemClickCallback{
+        cardViewAdapter.setOnItemClickCallback(object : PostAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Posts) {
                 // ONLY INTENT WITHOUT DATA
                 startActivity(Intent(this@ExploreActivity, PostActivity::class.java))
             }
         })
 
+    }
+
+    companion object {
+        private const val TAG = "ExploreActivity"
     }
 }

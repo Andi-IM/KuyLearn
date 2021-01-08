@@ -9,5 +9,5 @@ data class Posts(
     var company: String,
     var date: String,
     var message: String,
-    var photo: String
+    var photo: Int
 ) : Parcelable
