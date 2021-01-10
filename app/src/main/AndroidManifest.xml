@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_kuylearn_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KuyLearn">
-        <activity android:name=".raven.UjianActivity"></activity>
+        <activity android:name=".raven.MateriActivity"></activity>
+        <activity android:name=".raven.UjianActivity" />
         <activity android:name=".raven.QuizActivity" />
         <activity android:name=".raven.ViconActivity" />
         <activity android:name=".raven.AttemptTugasActivity" />
