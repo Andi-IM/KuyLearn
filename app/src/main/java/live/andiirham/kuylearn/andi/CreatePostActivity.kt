@@ -2,6 +2,7 @@ package live.andiirham.kuylearn.andi
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,8 +19,18 @@ class CreatePostActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = resources.getString(R.string.membuat_post)
 
+
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.postmenu, menu)
+        return true
+    }
+
+    /**
+     * Make Options send
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.send_post) {
             Toast.makeText(applicationContext, "Sent!", Toast.LENGTH_SHORT).show()
@@ -28,6 +39,9 @@ class CreatePostActivity : AppCompatActivity() {
         return true
     }
 
+    /**
+     * Back Button
+     */
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true

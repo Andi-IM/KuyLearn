@@ -11,7 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_kuylearn_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KuyLearn">
-        <activity android:name=".andi.CreatePostActivity"></activity>
+        <activity android:name=".raven.AttemptTugasActivity"></activity>
+        <activity android:name=".raven.AttemptAbsentActivity" />
+        <activity android:name=".raven.AbsenActivity" />
+        <activity android:name=".raven.TugasActivity" />
+        <activity
+            android:name=".raven.ClassListActivity"
+            android:theme="@style/customPosts" />
+        <activity android:name=".raven.NotificationActivity" />
+        <activity
+            android:name=".raven.RuangBelajarSActivity"
+            android:theme="@style/CustomExplore" />
+        <activity
+            android:name=".andi.ChatRoomActivity"
+            android:theme="@style/CustomExplore" />
+        <activity
+            android:name=".andi.ChatActivity"
+            android:theme="@style/customPosts" />
+        <activity
+            android:name=".andi.ProfileActivity"
+            android:theme="@style/CustomExplore" />
+        <activity android:name=".andi.CreatePostActivity" />
         <activity
             android:name=".andi.PostActivity"
             android:theme="@style/customPosts" />

@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import live.andiirham.kuylearn.R
 import live.andiirham.kuylearn.andi.ExploreActivity
+import live.andiirham.kuylearn.andi.ProfileActivity
 import live.andiirham.kuylearn.databinding.ActivityDashboardBinding
+import live.andiirham.kuylearn.raven.ClassListActivity
+import live.andiirham.kuylearn.raven.TugasActivity
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
@@ -21,6 +24,18 @@ class DashboardActivity : AppCompatActivity() {
 
         binding.btnTimeline.setOnClickListener {
             startActivity(Intent(this@DashboardActivity, ExploreActivity::class.java))
+        }
+
+        binding.btnGotoProfile.setOnClickListener {
+            startActivity(Intent(this@DashboardActivity, ProfileActivity::class.java))
+        }
+
+        binding.btnClass.setOnClickListener {
+            startActivity(Intent(this@DashboardActivity, ClassListActivity::class.java))
+        }
+
+        binding.btnTugas.setOnClickListener {
+            startActivity(Intent(this@DashboardActivity, TugasActivity::class.java))
         }
     }
 }

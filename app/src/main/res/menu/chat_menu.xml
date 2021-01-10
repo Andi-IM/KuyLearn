@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_createchats"
+        android:title="item_create"
+        app:showAsAction="always" />
+    <item android:title="Manage Conversations" />
+    <item android:title="New Group" />
+    <item android:title="Message request inbox" />
+</menu>

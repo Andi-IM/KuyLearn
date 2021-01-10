@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/chat"
+        android:title="chats"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/team"
+        android:title="groups"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/bell1"
+        android:title="notification"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/man"
+        android:title="profile"
+        app:showAsAction="always" />
+</menu>

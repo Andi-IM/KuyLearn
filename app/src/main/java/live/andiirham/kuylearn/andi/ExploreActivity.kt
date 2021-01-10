@@ -26,8 +26,12 @@ class ExploreActivity : AppCompatActivity() {
         getList()
         showPosts()
 
-        binding.btnProfile.setOnClickListener {
+        binding.btnDashboard.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
+        }
+
+        binding.btnChats.setOnClickListener {
+            startActivity(Intent(this, ChatActivity::class.java))
         }
 
         binding.exploreSearch.suggestionsAdapter
@@ -65,6 +69,7 @@ class ExploreActivity : AppCompatActivity() {
         photo.recycle()
         return list
     }
+
     private fun showPosts() {
         binding.rvPosts.layoutManager = LinearLayoutManager(this)
         val cardViewAdapter = PostAdapter(list)

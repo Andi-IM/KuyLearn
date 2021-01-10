@@ -8,37 +8,19 @@
     <string name="welcome_description_3">Buatlah berbagai tulisan serta karya. Sebarkanlah agar menjadi bermanfaat bagi yang lain. Buat seluruh dunia tahu akan potensi yang ada pada dirimu.</string>
     <string name="welcome_title_4">Belajar Jadi Lebih Mudah</string>
     <string name="welcome_description_4">Dapatkan beragam kemudahan dalam kegiatan belajar mengajar anda  Membantu memajukan kegiatan pendidikan di Indonesia</string>
-    <string name="btn_start">Mulai Mimpimu!</string>
-    <string name="lanjut">Lanjut</string>
-    <string name="lewati">Lewati</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="skip">lewati</string>
-    <string name="finish">Selesai</string>
     <string name="explore">Explore</string>
     <string name="membuat_post">Membuat Post</string>
 
     <!-- untuk string -->
-    <string name="app_intro_skip_button">
-         Lewati
-    </string>
-    <string name="app_intro_next_button">
-         Lanjut
-    </string>
-    <string name="app_intro_back_button">
-         Kembali
-    </string>
-    <string name="app_intro_done_button">
-         Mulai Mimpimu!
-    </string>
-    <string name="app_intro_image_content_description">
-         Grafik
-    </string>
 
     <string name="item_user_name">Arung Ramadhan</string>
     <string name="item_user_company">Siswa dari PNP</string>
     <string name="item_user_time">Jan 1, 07.00</string>
     <string name="item_user_message">Selamat Pagi!</string>
+    <string name="notification">notification</string>
+    <string name="chats">Chats</string>
+    <string name="kelas">Kelas</string>
 
 
     <!-- DATA ARRAY FOR RECYCLERVIEW -->
@@ -54,12 +36,6 @@
         <item>Siswa dari PNP</item>
     </string-array>
 
-    <string-array name="time">
-        <item>Jan 1, 07.00</item>
-        <item>Jan 1, 07.00</item>
-        <item>Jan 1, 07.00</item>
-    </string-array>
-
     <string-array name="messages">
         <item>Selamat Pagi!</item>
         <item>Selamat Pagi!</item>
@@ -70,5 +46,10 @@
         <item>@drawable/ic_arung</item>
         <item>@drawable/ic_arung</item>
         <item>@drawable/ic_arung</item>
+    </string-array>
+
+    <!--  TEST KELAS  -->
+    <string-array name="kelas">
+        <item>TRPL 2A</item>
     </string-array>
 </resources>

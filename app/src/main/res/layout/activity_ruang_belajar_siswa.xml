@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_profile"
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/base_color"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/base_color"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:menu="@menu/kelas_menu" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_edttext"
+                android:backgroundTint="@color/md_white_1000"
+                android:ems="10"
+                android:hint="Masukkan kode kelas"
+                android:inputType="textShortMessage"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00E2F0"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Redeem"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#DDF8F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_kelas"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="32dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/shelfbook"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Kelas"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btn_belajar_quiz"
+                app:layout_constraintEnd_toStartOf="@+id/btn_belajar_tugas"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_tugas"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/timeline"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Tugas"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btn_belajar_ujian"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_belajar_kelas"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_quiz"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/quiz"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Quiz"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btn_belajar_vicon"
+                app:layout_constraintEnd_toEndOf="@+id/btn_belajar_kelas"
+                app:layout_constraintStart_toStartOf="@+id/btn_belajar_kelas"
+                app:layout_constraintTop_toBottomOf="@+id/btn_belajar_kelas" />
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_ujian"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/score"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Ujian"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/btn_belajar_absensi"
+                app:layout_constraintEnd_toEndOf="@+id/btn_belajar_tugas"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btn_belajar_tugas"
+                app:layout_constraintTop_toBottomOf="@+id/btn_belajar_tugas" />
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_vicon"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/video_conference"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Ujian"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_belajar_quiz"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/btn_belajar_quiz"
+                app:layout_constraintTop_toBottomOf="@+id/btn_belajar_quiz" />
+
+            <com.dxjia.library.ImageTextButton
+                android:id="@+id/btn_belajar_absensi"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                app:itb_bg="@color/md_white_1000"
+                app:itb_icon="@drawable/timeline"
+                app:itb_icon_position="right"
+                app:itb_radius="3dp"
+                app:itb_text="Absen"
+                app:itb_text_color="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_belajar_ujian"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btn_belajar_ujian"
+                app:layout_constraintTop_toBottomOf="@+id/btn_belajar_ujian" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

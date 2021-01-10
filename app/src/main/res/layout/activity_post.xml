@@ -62,7 +62,6 @@
         app:layout_constraintGuide_begin="84dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -71,7 +70,6 @@
         app:srcCompat="@drawable/ic_baseline_language_24" />
 
     <TextView
-        android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -100,7 +98,6 @@
         app:layout_constraintGuide_begin="136dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -159,7 +156,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <include
-        android:id="@+id/include"
         layout="@layout/item_comment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
