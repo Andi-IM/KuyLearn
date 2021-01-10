@@ -8,13 +8,13 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import live.andiirham.kuylearn.R
-import live.andiirham.kuylearn.databinding.ActivityAttemptTugasBinding
+import live.andiirham.kuylearn.databinding.ActivityViconBinding
 
-class AttemptTugasActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAttemptTugasBinding
+class ViconActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityViconBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAttemptTugasBinding.inflate(layoutInflater)
+        binding = ActivityViconBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

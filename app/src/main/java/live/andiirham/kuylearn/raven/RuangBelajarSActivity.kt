@@ -30,6 +30,21 @@ class RuangBelajarSActivity : AppCompatActivity() {
             startActivity(Intent(this, AbsenActivity::class.java))
         }
 
+        binding.btnBelajarVicon.setOnClickListener {
+            startActivity(Intent(this, ViconActivity::class.java))
+        }
+
+        binding.btnBelajarKelas.setOnClickListener {
+            startActivity(Intent(this, ClassListActivity::class.java))
+        }
+
+        binding.btnBelajarQuiz.setOnClickListener {
+            startActivity(Intent(this, QuizActivity::class.java))
+        }
+
+        binding.btnBelajarUjian.setOnClickListener {
+            startActivity(Intent(this, UjianActivity::class.java))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

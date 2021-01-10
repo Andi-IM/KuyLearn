@@ -49,6 +49,12 @@ class TugasActivity : AppCompatActivity() {
         binding.rvTugas.layoutManager = LinearLayoutManager(this)
         val cardViewAdapter = TugasAdapter(list)
         binding.rvTugas.adapter = cardViewAdapter
+
+        cardViewAdapter.setOnItemClickCallback(object : TugasAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Tugas) {
+                startActivity(Intent(this@TugasActivity, AttemptTugasActivity::class.java))
+            }
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -1,27 +1,21 @@
 package live.andiirham.kuylearn.raven
 
 import android.content.Intent
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import live.andiirham.kuylearn.R
-import live.andiirham.kuylearn.databinding.ActivityAttemptTugasBinding
+import live.andiirham.kuylearn.databinding.ActivityQuizBinding
 
-class AttemptTugasActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAttemptTugasBinding
+class QuizActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityQuizBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAttemptTugasBinding.inflate(layoutInflater)
+        binding = ActivityQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setBackgroundDrawable(
-            ColorDrawable(ContextCompat.getColor(applicationContext, R.color.base_color))
-        )
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

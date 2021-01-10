@@ -8,7 +8,7 @@ import live.andiirham.kuylearn.R
 import live.andiirham.kuylearn.andi.ExploreActivity
 import live.andiirham.kuylearn.andi.ProfileActivity
 import live.andiirham.kuylearn.databinding.ActivityDashboardBinding
-import live.andiirham.kuylearn.raven.ClassListActivity
+import live.andiirham.kuylearn.raven.RuangBelajarSActivity
 import live.andiirham.kuylearn.raven.TugasActivity
 
 class DashboardActivity : AppCompatActivity() {
@@ -31,7 +31,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         binding.btnClass.setOnClickListener {
-            startActivity(Intent(this@DashboardActivity, ClassListActivity::class.java))
+            startActivity(Intent(this@DashboardActivity, RuangBelajarSActivity::class.java))
         }
 
         binding.btnTugas.setOnClickListener {

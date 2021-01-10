@@ -176,7 +176,7 @@
                 app:itb_icon="@drawable/video_conference"
                 app:itb_icon_position="right"
                 app:itb_radius="3dp"
-                app:itb_text="Ujian"
+                app:itb_text="Vicon"
                 app:itb_text_color="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/btn_belajar_quiz"

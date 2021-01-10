@@ -9,11 +9,19 @@ import live.andiirham.kuylearn.raven.dataclass.Tugas
 class TugasAdapter(private val list: ArrayList<Tugas>) :
     RecyclerView.Adapter<TugasAdapter.ViewHolder>() {
 
-    class ViewHolder(private val binding: ItemRowAssignmentBinding) :
+    private var onItemClickCallback: TugasAdapter.OnItemClickCallback? = null
+    fun setOnItemClickCallback(
+        onItemClickCallback: OnItemClickCallback
+    ) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    inner class ViewHolder(private val binding: ItemRowAssignmentBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(tugas: Tugas) {
             binding.assignName.text = tugas.namaTugas
             binding.assignDeadline.text = tugas.deadline
+            binding.btnAssignSubmit.setOnClickListener { onItemClickCallback?.onItemClicked(tugas) }
         }
     }
 
@@ -27,5 +35,9 @@ class TugasAdapter(private val list: ArrayList<Tugas>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Tugas)
     }
 }
