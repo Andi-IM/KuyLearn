@@ -59,7 +59,7 @@ class ClassListActivity : AppCompatActivity() {
 
         cardViewAdapter.setOnItemClickCallback(object : ClassAdapter.OnItemClickCallback {
             override fun onItemClicked(data: ClassModel) {
-                startActivity(Intent(this@ClassListActivity, RuangBelajarSActivity::class.java))
+                startActivity(Intent(this@ClassListActivity, MateriActivity::class.java))
             }
         })
     }
